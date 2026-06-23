@@ -1,0 +1,176 @@
+{
+    "mdanalysis_no": {
+        "task": "mdanalysis",
+        "config": {
+            "attention": 0,
+            "backbone": true,
+            "batch_size": 4,
+            "config_by_file": "",
+            "cuda": true,
+            "data_dir": "mdanalysis/dataset",
+            "dataset": "nbody_small",
+            "decoder_layer": 2,
+            "delta_frame": 15,
+            "dropout": 0.5,
+            "epochs": 15000,
+            "exp_name": "mdanalysis_no",
+            "flat": false,
+            "interaction_layer": 4,
+            "lambda_link": 2,
+            "load_cached": true,
+            "log_interval": 1,
+            "lr": 5e-05,
+            "max_training_samples": 3000,
+            "model": "egno",
+            "n_cluster": 20,
+            "n_layers": 4,
+            "n_workers": 20,
+            "nf": 128,
+            "no_cuda": false,
+            "num_modes": 2,
+            "num_timesteps": 4,
+            "outf": "logs",
+            "pooling_layer": 4,
+            "seed": 42,
+            "test_interval": 5,
+            "test_rot": false,
+            "test_trans": false,
+            "weight_decay": 0.0001
+        },
+        "metrics": {
+            "num_batches": 209,
+            "num_samples": 835,
+            "num_nodes_counted": 713925,
+            "F-MSE": 2.2263280894351647,
+            "A-MSE": 1.8758867827211074,
+            "F-MSE_x1e2": 222.63280894351647,
+            "A-MSE_x1e2": 187.58867827211074,
+            "F-RMSE": 1.492088499196735,
+            "A-RMSE": 1.3696301627523788,
+            "F-MAE": 0.895646200745439,
+            "A-MAE": 0.820738092984353,
+            "mse_final_timestep": 2.2263280894351647,
+            "mse_all_timesteps": 1.8758867827211074,
+            "rmse_final_timestep": 1.492088499196735,
+            "mae_final_timestep": 0.895646200745439,
+            "mean_final_node_l2": 1.777781600313627,
+            "rms_final_node_l2": 2.584373092776702,
+            "per_timestep_mse": [
+                1.337251856165228,
+                1.8156612959661818,
+                2.124305929442285,
+                2.2263280912590027
+            ],
+            "per_timestep_mae": [
+                0.7073042709810642,
+                0.8104075536335954,
+                0.8695943515928669,
+                0.895646200745439
+            ],
+            "checkpoint_best": {
+                "epoch": 250,
+                "train_loss": 1.7729221523284913,
+                "lp_loss": 0.0,
+                "val_loss": 2.0328746568098914,
+                "test_loss": 2.2263281713702723,
+                "test_loss_hard": 2.226328251033486
+            },
+            "task": "mdanalysis"
+        },
+        "sample_metrics": [
+            {
+                "F-MSE": 0.34867483377456665,
+                "A-MSE": 1.0357028245925903,
+                "F-MSE_x1e2": 34.867483377456665,
+                "A-MSE_x1e2": 103.57028245925903,
+                "F-MAE": 0.4529757499694824,
+                "A-MAE": 0.6867460012435913,
+                "mean_final_node_l2": 0.8952928781509399,
+                "max_final_node_l2": 4.445202827453613,
+                "per_timestep_mse": [
+                    1.9881097078323364,
+                    1.0798530578613281,
+                    0.7261739373207092,
+                    0.34867483377456665
+                ],
+                "per_timestep_mae": [
+                    0.969878077507019,
+                    0.7326722145080566,
+                    0.5914580225944519,
+                    0.4529757499694824
+                ],
+                "sample_index": 0
+            },
+            {
+                "F-MSE": 2.3623106479644775,
+                "A-MSE": 1.372294306755066,
+                "F-MSE_x1e2": 236.23106479644775,
+                "A-MSE_x1e2": 137.2294306755066,
+                "F-MAE": 1.0078810453414917,
+                "A-MAE": 0.7612828612327576,
+                "mean_final_node_l2": 1.9512284994125366,
+                "max_final_node_l2": 9.855389595031738,
+                "per_timestep_mse": [
+                    0.7792582511901855,
+                    1.2577717304229736,
+                    1.0898367166519165,
+                    2.3623106479644775
+                ],
+                "per_timestep_mae": [
+                    0.6213874220848083,
+                    0.7383472323417664,
+                    0.6775158643722534,
+                    1.0078810453414917
+                ],
+                "sample_index": 1
+            },
+            {
+                "F-MSE": 1.8396109342575073,
+                "A-MSE": 1.8813166618347168,
+                "F-MSE_x1e2": 183.96109342575073,
+                "A-MSE_x1e2": 188.13166618347168,
+                "F-MAE": 0.9772173762321472,
+                "A-MAE": 0.9305803775787354,
+                "mean_final_node_l2": 1.9868773221969604,
+                "max_final_node_l2": 6.4048871994018555,
+                "per_timestep_mse": [
+                    1.4611421823501587,
+                    1.6885391473770142,
+                    2.5359740257263184,
+                    1.8396109342575073
+                ],
+                "per_timestep_mae": [
+                    0.7882081270217896,
+                    0.8833333253860474,
+                    1.0735628604888916,
+                    0.9772173762321472
+                ],
+                "sample_index": 2
+            },
+            {
+                "F-MSE": 2.906561851501465,
+                "A-MSE": 1.8692959547042847,
+                "F-MSE_x1e2": 290.6561851501465,
+                "A-MSE_x1e2": 186.92959547042847,
+                "F-MAE": 1.1977438926696777,
+                "A-MAE": 0.898688018321991,
+                "mean_final_node_l2": 2.3824634552001953,
+                "max_final_node_l2": 8.574711799621582,
+                "per_timestep_mse": [
+                    0.7660483717918396,
+                    1.8949816226959229,
+                    1.909592628479004,
+                    2.906561851501465
+                ],
+                "per_timestep_mae": [
+                    0.5793975591659546,
+                    0.9269888401031494,
+                    0.8906217813491821,
+                    1.1977438926696777
+                ],
+                "sample_index": 3
+            }
+        ],
+        "figure": "outputs/egno_mdanalysis_eval/mdanalysis_no_prediction.png"
+    }
+}
